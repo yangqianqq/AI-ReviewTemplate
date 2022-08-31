@@ -1,0 +1,62 @@
+.share-dialog {
+    .botton-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 40px 30px 16px;
+
+        .btn-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: auto;
+            margin: 0px;
+            padding: 0px;
+            background: #fff;
+            line-height: 1;
+
+            &::after {
+                content: none;
+            }
+        }
+
+        .btn-icon {
+            display: block;
+            width: 92px;
+            height: 92px;
+            margin-bottom: 24px;
+        }
+
+        .btn-text {
+            font-family: "Source Han Sans CN";
+            font-weight: normal;
+            font-size: 28px;
+            text-align: center;
+            color: #202224;
+        }
+    }
+
+    .share-tips {
+        margin-bottom: 14px;
+        font-family: "Source Han Sans CN";
+        font-weight: normal;
+        font-size: 24px;
+        text-align: center;
+        color: #a3aab7;
+        line-height: 1;
+    }
+
+    .cancel-btn {
+        width: 690px;
+        height: 80px;
+        box-sizing: border-box;
+        padding-top: 24px;
+        margin: 0 auto 20px;
+        border: 1Px solid #e8e9eb;
+        font-family: "Source Han Sans CN";
+        font-size: 32px;
+        text-align: center;
+        color: #7d8086;
+        line-height: 1;
+    }
+}

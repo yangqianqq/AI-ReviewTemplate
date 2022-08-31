@@ -1,0 +1,23 @@
+.go-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    right: 28px;
+    bottom: 48px;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 4px 28px rgba(92, 96, 100, 0.16);
+
+    .go-top-img {
+        display: block;
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.go-top.hidden {
+    visibility: hidden;
+}

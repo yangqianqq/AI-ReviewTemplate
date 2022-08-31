@@ -1,0 +1,95 @@
+.home_page {
+  box-sizing: border-box;
+  min-height: 100vh;
+  background: #f5f6f7;
+  padding: 60px 0;
+}
+
+.cardItem {
+  box-sizing: border-box;
+  margin: auto;
+  width: 690px;
+  background: #ffffff;
+
+  padding: 30px;
+
+
+  .cardTile {
+    font-size: 28px;
+    font-family: PingFang SC, PingFang SC-Bold;
+    font-weight: 500;
+    text-align: left;
+    color: #202224;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 36px;
+      background: #e02021;
+      border-radius: 4px;
+
+      position: relative;
+      left: -32px;
+    }
+  }
+
+  .templateList {
+    font-size: 24px;
+    font-family: PingFangSC-Regular;
+
+    color: #202224;
+    overflow-x: auto;
+
+    width: 100%;
+  }
+
+  .templateItem {
+    box-sizing: border-box;
+    padding: 10px 20px;
+    margin-right: 12px;
+    border-radius: 4px;
+    display: inline-block;
+    border: 1Px solid #eee;
+
+    &.active {
+      border: 1Px solid #E02021;
+      color: #E02021;
+    }
+  }
+
+
+  .formInput {
+    width: 100%;
+    height: 80px;
+    background: #ffffff;
+    border: 1Px solid #E02021;
+    font-size: 28px;
+    line-height: 80px;
+    box-sizing: border-box;
+    padding: 0 24px;
+
+    .weui-input {
+      line-height: 80px;
+      height: 80px;
+    }
+  }
+
+  .goGenerate {
+    width: 400px;
+    margin: auto;
+    height: 80px;
+    background: linear-gradient(270deg, #e02021, #f07250);
+    box-shadow: 0px 4px 6px 0px rgba(224, 32, 33, 0.30);
+    font-size: 32px;
+    font-family: Source Han Sans CN, Source Han Sans CN-Medium;
+    font-weight: 500;
+
+    color: #ffffff;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+}

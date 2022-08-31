@@ -1,0 +1,505 @@
+html,
+body {
+    margin: 0 auto;
+}
+
+@mixin mgb($num) {
+    margin-bottom: $num;
+}
+
+.mgb10 {
+    @include mgb(10px);
+}
+
+.mgb20 {
+    @include mgb(20px);
+}
+
+.mgb100 {
+    @include mgb(100px);
+}
+
+.mgt10 {
+    margin-top: 10px;
+}
+
+.mgt20 {
+    margin-top: 20px;
+}
+
+.mgt40 {
+    margin-top: 40px;
+}
+
+.pdb50 {
+    padding-bottom: 50px;
+}
+
+.pdt50 {
+    padding-top: 20px;
+}
+
+//商品列表的商品信息
+.productInfo {
+    display: flex;
+    padding: 30px 0;
+
+    .productImg {
+        margin-right: 30px;
+        width: 170px;
+        height: 160px;
+    }
+
+    .productCenterText {
+        position: relative;
+        display: flex;
+        flex: 1;
+        flex-flow: column;
+        flex-wrap: wrap;
+        width: 100%;
+        // height: 144px;
+    }
+
+    //订单号
+    .orderNum {
+        overflow: hidden;
+        margin-bottom: 25px;
+        width: 500px;
+        color: #a3aab7;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 1em;
+    }
+
+    .orderItemProductNum {
+        position: relative;
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        color: #a3aab7;
+        font-weight: 400;
+        font-size: 22px;
+    }
+
+    .orderPrice {
+        float: right;
+
+        .orderPriceNum {
+            display: inline-block;
+            margin-left: 10px;
+            color: #e02021;
+            text-align: left;
+            font-weight: 700;
+            font-weight: bolder;
+            font-size: 28px;
+        }
+    }
+
+    .productName {
+        margin-bottom: 15px;
+        color: #202224;
+        font-weight: 400;
+        font-size: 28px;
+    }
+
+    .productPrice {
+        margin-bottom: 15px;
+        color: #15202c;
+        font-weight: bolder;
+        font-size: 24px;
+
+        .productPriceNum {
+            display: inline-block;
+            font-size: 34px;
+        }
+    }
+}
+
+//块级标题
+.rowTitle {
+    color: #202224;
+    text-align: left;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1em;
+
+    .rowCopy {
+        position: absolute;
+        top: 50px;
+        right: 30px;
+        display: inline-flex;
+        align-items: center;
+        padding: 6px 10px 6px 45px;
+        border: 1px solid #a3aab7;
+        border-radius: 6px;
+        color: #a3aab7;
+        font-size: 24px;
+
+        .img {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+
+        }
+    }
+}
+
+//两端对齐list
+.spaceBetweenList {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    color: #202224;
+    font-size: 28px;
+}
+
+.spaceBetweenList:last-child {
+    margin-bottom: 5px;
+}
+
+//浅色字号
+.lightText {
+    color: #a3aab7;
+}
+
+//订单上的标题和状态
+.orderItemTop {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3px;
+    height: 85px;
+    border-bottom: 1px solid #e8e9eb;
+    color: #a3aab7;
+    font-size: 28px;
+    line-height: 85px;
+
+    .lightText {
+        display: inline-block;
+        margin-left: 15px;
+        color: #202224;
+    }
+
+    .orderItemNum {
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between !important;
+        color: #a3aab7;
+    }
+
+    .payStatus_bh {
+        color: #e02021;
+    }
+
+    .payStatus_qx {
+        color: #A3AAB7
+    }
+}
+
+.inputRight {
+    .at-input__input {
+        position: relative;
+        padding-right: 30px;
+        text-align: right;
+    }
+
+    .at-input__input:after {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0;
+        display: inline-block;
+        margin: auto;
+        width: 20px;
+        height: 20px;
+        background: url('https://static-files.heimaqf.cn/arrow.png') no-repeat;
+        background-size: cover !important;
+        content: ' ';
+    }
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #a3aab7;
+
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #a3aab7;
+
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: #a3aab7;
+
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #a3aab7;
+
+}
+
+//vip标识
+.vipPrice::after {
+    position: absolute;
+    top: 0px;
+    // right: -78px;
+    bottom: 0;
+    display: inline-block;
+    margin: auto;
+    width: 75px;
+    height: 34px;
+    background: url('https://static-files.heimaqf.cn/hyj_bg.svg') no-repeat;
+    background-size: cover !important;
+    content: ' ';
+}
+
+
+//页面下按钮
+.fixedBtn {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    z-index: 100;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    min-height: 140px;
+    width: 100%;
+    // box-shadow: 0px -5px 10px #b7b2b261;
+    border: none;
+    background: #ffffff;
+    text-align: center;
+    opacity: 0.95;
+
+    .addTextBtn {
+        display: inline-block;
+        padding-left: 60px;
+        width: auto;
+        color: #202224;
+        font-size: 28px;
+    }
+
+    .addTextBtn::before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0px;
+        display: inline-block;
+        margin: auto;
+        width: 60px;
+        height: 60px;
+        background: url('./common/imgs/add.png') no-repeat;
+        background-size: cover !important;
+        color: '#666';
+        content: ' ';
+    }
+
+    .deleteBtn {
+        color: #e02021;
+        font-size: 28px;
+    }
+
+    .fixedBtn_grey {
+        width: 100%;
+        height: 80px;
+        border: none;
+        border-radius: 8px;
+        background: #d3d7e0;
+        color: #fff;
+        font-size: 26px;
+        line-height: 80px;
+    }
+
+    .fixedBtn_red {
+        width: 100%;
+        height: 80px;
+        border: none;
+        border-radius: 8px;
+        background: #e02021;
+        color: #fff;
+        font-size: 26px;
+        line-height: 80px;
+    }
+
+    .fixedBtn_grey_text {
+        display: flex;
+        align-items: center;
+        border: none;
+        background: none;
+    }
+
+    .fixedBtn_grey_text::after {
+        position: relative;
+        margin-left: 15px;
+        width: 20px;
+        height: 20px;
+        background: url('https://static-files.heimaqf.cn/arrow.png') no-repeat;
+        background-size: cover !important;
+        content: ' ';
+    }
+
+    .deleteBtn {
+        position: absolute;
+        top: -100px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        color: #e02021;
+    }
+}
+
+.textRightNone {
+    padding-right: 0 !important;
+
+}
+
+.textRightArrow {
+    position: relative;
+    padding-right: 25px;
+}
+
+.textRightArrow:after {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    bottom: 0;
+    display: inline-block;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    background: url('https://static-files.heimaqf.cn/arrow.png') no-repeat;
+    background-size: cover !important;
+    color: '#666';
+    content: ' ';
+}
+
+.confirmModal {
+    text-align: center;
+
+    .at-modal__content {
+        min-height: 100px;
+    }
+
+    .delTips {
+        color: #2d3340;
+        text-align: center;
+        font-weight: 500;
+        font-size: 32px;
+    }
+
+    .sureBtn,
+    .delBtn {
+        margin: 20px;
+        width: 252px;
+        height: 68px;
+        border: none;
+        border-radius: 8px;
+        background: #e02021;
+        color: #fff;
+        text-align: center;
+        font-weight: 400;
+        font-size: 28px;
+        font-family: Source Han Sans CN, Source Han Sans CN-Regular;
+        line-height: 68px;
+        opacity: 1;
+    }
+
+    .delBtn {
+        border: 1Px solid #e8e9eb;
+        background: #fff;
+        color: #2d3340;
+    }
+}
+
+.textFormatting {
+    box-sizing: border-box;
+    padding: 50px 30px;
+    width: 100%;
+    color: #202224;
+    font-size: 24px;
+    line-height: 1.6em;
+
+    .textCenter {
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .textIndent {
+        text-indent: 2em;
+    }
+
+    .textFormattingTitle {
+        font-size: 26px;
+        line-height: 2em;
+    }
+}
+
+//联系客服
+#chatBtn {
+    display: none !important;
+}
+
+.listTextEllipsis {
+    width: 460px;
+    text-align: right;
+    white-space: pre-wrap;
+    line-height: 1.5em;
+
+    &.listTextEllipsis_imgs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: 400px;
+        text-align: left;
+    }
+}
+
+//tarbar
+.weui-tabbar {
+    background-color: #fff;
+    box-shadow: 0px -1px 11px #66666638;
+}
+
+.weui-tabbar:before {
+    border-top: 0;
+}
+
+.wap-chat-close {
+    display: none !important;
+}
+
+/*swtich整体大小及背景色*/
+.wx-switch-input {
+    width: 72rpx !important;
+    height: 35rpx !important;
+    border: #E02021 !important;
+    background: #E02021 !important;
+}
+
+/*白色样式（false的样式）*/
+.wx-switch-input::before {
+    width: 73rpx !important;
+    height: 35rpx !important;
+    border: 2rpx solid #F5F6F7 !important;
+}
+
+/* 中间的小圆球 */
+/*绿色样式（true的样式）*/
+.wx-switch-input::after {
+    width: 35rpx !important;
+    height: 35rpx !important;
+}
+
+::-webkit-scrollbar {
+    width: 0 !important
+}

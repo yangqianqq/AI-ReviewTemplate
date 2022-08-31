@@ -1,0 +1,35 @@
+.formInput {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px;
+    background: #fff;
+    text-align: right;
+
+    .s_form_title {
+        color: #202224;
+        text-align: left;
+        font-weight: 400;
+        font-size: 28px;
+    }
+    .s_form_input {
+        flex: 1;
+        padding-right: 30px;
+        padding-left: 20px;
+        color: #202224;
+        font-size: 28px;
+    }
+}
+
+.formInput.verticalForm {
+    flex-wrap: wrap;
+    .s_form_title {
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .s_form_input {
+        padding-left: 0;
+        text-align: left;
+    }
+}

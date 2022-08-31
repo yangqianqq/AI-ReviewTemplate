@@ -1,0 +1,43 @@
+.sure_modal{
+    .at-modal__header{
+        padding-bottom: 0;
+        color: #202224;
+        text-align: center;
+        font-weight: 500;
+        font-size: 32px;
+        &::after{
+            content: none
+        }
+    }
+
+    .at-modal__content{
+        min-height: auto;
+        color: #a3aab7;
+        text-align: left;
+        font-size: 28px;
+    }
+
+    .at-modal__footer{
+        padding: 24px;
+        &::before{
+            content: none;
+        }
+    }
+
+    taro-button-core{
+        margin-top: 0 !important;
+        border: 1Px solid #e8e9eb;
+        border-radius: 8px;
+        background: initial;
+        color: #202224;
+        text-align: center;
+        font-size: 28px;
+        &:last-of-type{
+            background: #e02021;
+            color: white;
+        }
+        &+taro-button-core{
+            margin-left: 30px;
+        }
+    }
+}

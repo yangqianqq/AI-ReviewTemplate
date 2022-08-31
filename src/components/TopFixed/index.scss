@@ -1,0 +1,94 @@
+.topFixed {
+    position: relative;
+
+
+
+
+    .normalTab {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .ZWfixedTab {
+        width: 100%;
+    }
+
+    .fixedTab {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .fixedAfter {
+        width: 100%;
+        height: 100px;
+        // background: green;
+    }
+
+    .scrollTab {
+        display: flex;
+        overflow-x: scroll;
+        background: #fff;
+        white-space: nowrap;
+    }
+
+    .nameList {
+        position: relative;
+        display: inline-block;
+        flex: 1;
+        flex-basis: 250px;
+        box-sizing: border-box;
+        padding: 0px 30px;
+        height: 100px;
+        background: #fff;
+        color: #a3aab7;
+        text-align: center;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 100px;
+
+    }
+
+    .bottomLine {
+        position: absolute;
+        right: 0;
+        bottom: 12px;
+        left: 0;
+        margin: 0 auto;
+        width: 23%;
+        width: 0;
+        height: 8px;
+        background: #fff;
+        transition: width 0.1s;
+    }
+
+    .activeTabItem {
+        color: #fff;
+        color: #202224;
+        font-weight: 600;
+
+        .bottomLine {
+            max-width: 50px;
+            width: 23%;
+            background: #E72D0F;
+            transition: width 0.1s;
+        }
+    }
+
+    .fixedTab {
+        position: fixed;
+        top: 0;
+        left: inherit;
+        z-index: 2;
+    }
+
+    .tabContent {
+        // background: chocolate;
+
+        // opacity: 0.4;
+        .tabListItem {
+            margin-bottom: 10px;
+            border-bottom: 1Px solid #eee;
+        }
+    }
+}

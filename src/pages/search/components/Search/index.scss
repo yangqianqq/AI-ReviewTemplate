@@ -1,0 +1,130 @@
+.search_wrapper {
+  padding-top: 20px;
+
+  .nodata_wrapper {
+    background-color: white;
+    color: #a3aab7;
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .search_content_wrapper {
+    background: #f5f6f7;
+  }
+
+  .at-search-bar {
+    box-sizing: border-box;
+    padding: 0 15px 20px;
+  }
+
+  .at-search-bar::after {
+    border: none;
+  }
+
+  .at-search-bar__input-cnt {
+    height: 88px;
+    border-radius: 4px;
+  }
+
+  .at-search-bar__placeholder-wrap {
+    height: 88px;
+  }
+
+  .at-search-bar__input {
+    height: 88px !important;
+  }
+
+  .at-search-bar__action {
+    background-color: initial;
+    color: #7d8086;
+  }
+
+  .at-search-bar__clear {
+    height: 88px;
+  }
+
+  .weui-input {
+    height: 100%;
+    line-height: normal;
+  }
+
+  .search_recommended_wrapper {
+    padding: 15px;
+    background-color: white;
+    width: 750px !important;
+
+    .search_recommended_item {
+      padding: 30px 15px;
+      border-bottom: 1px solid #e8e9eb;
+      font-size: 28px;
+    }
+
+    em {
+      color: red;
+      font-style: normal;
+    }
+  }
+
+  .search_more_list_wrapper {
+    padding: 15px;
+
+    .search-list-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      padding: 30px;
+      border-radius: 16px;
+      background-color: white;
+      box-shadow: 0px 8px 40px 0px rgba(45, 51, 64, 0.08);
+
+      .item-btn {
+        align-self: center;
+        padding: 6px 20px;
+        border: 1Px solid #d3d7e0;
+        border-radius: 8px;
+        color: #202224;
+        text-align: center;
+        font-size: 24px;
+      }
+
+      .search-list-item-top {
+        display: flex;
+        flex-direction: row;
+        max-width: 500px;
+        color: #e02021;
+        text-align: left;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 40px;
+
+        .search-list-item-logo {
+          flex: none;
+          margin-right: 24px;
+          width: 100px;
+          height: 100px;
+          border: 1px solid #e8e9eb;
+          border-radius: 8px;
+        }
+
+        em {
+          color: red;
+          font-style: normal;
+        }
+
+        .content_wrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+
+        .content-score {
+          margin-top: 10px;
+          color: #a3aab7;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 40px;
+        }
+      }
+    }
+  }
+}

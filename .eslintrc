@@ -1,0 +1,14 @@
+{
+    "plugins": ["prettier", "react-hooks"],
+    "extends": ["taro/react", "plugin:prettier/recommended", "prettier"],
+    "rules": {
+        "indent": "off",
+        "react/jsx-uses-react": "off",
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-pascal-case": "off",
+        "import/no-commonjs": "off",
+        "react/jsx-indent-props": "off",
+        "react-hooks/rules-of-hooks": "error", // 检查 Hook 的规则
+        "react-hooks/exhaustive-deps": "warn" // 检查 effect 的依赖
+    }
+}

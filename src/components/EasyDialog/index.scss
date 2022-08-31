@@ -1,0 +1,54 @@
+.easy-dialog {
+    .at-modal__container {
+        width: 610px;
+        height: 340px;
+        box-sizing: border-box;
+        padding: 40px;
+        border-radius: 8px;
+        background: #fff;
+        
+        .title {
+            margin-bottom: 40px;
+            font-family: "Source Han Sans CN Medium";
+            font-weight: 500;
+            font-size: 32px;
+            text-align: center;
+            color: #2d3340;
+            line-height: 1;
+        }
+
+        .text {
+            margin-bottom: 40px;
+            font-family: "Source Han Sans CN";
+            font-size: 28px;
+            color: #2d3340;
+            line-height: 1.3;
+        }
+
+        .btns {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .btn {
+                width: 252px;
+                height: 68px;
+                box-sizing: border-box;
+                padding: 20px 0;
+                border-radius: 8px;
+                background: #e02021;
+                font-family: "Source Han Sans CN";
+                font-size: 28px;
+                text-align: center;
+                color: #fff;
+                line-height: 1;
+            }
+
+            .btn-continue {
+                border: 1Px solid #e8e9eb;
+                color:rgba(45, 51, 64, 0.54);
+                background: #fff;
+            } 
+        }
+    }
+}

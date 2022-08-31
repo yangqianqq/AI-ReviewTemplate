@@ -1,0 +1,8 @@
+dist/
+# config/
+.prettierignore
+.gitignore
+.eslintignore
+/node_modules/
+
+*.scss

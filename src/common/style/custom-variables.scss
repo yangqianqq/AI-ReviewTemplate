@@ -1,0 +1,72 @@
+/* Font */
+$font-size-xs: 18px; // 非常用字号，用于标签
+$font-size-sm: 18px; // 用于辅助信息
+$font-size-base: 24px; // 常用字号
+$font-size-lg: 26px; // 常规标题
+$font-size-xl: 28px; // 大标题
+$font-size-xxl: 32px; // 用于大号的数字
+
+.infoList {
+
+    .at-list__item {
+        padding: 30px 60px 30px 40px !important;
+    }
+
+    //list 图标大小
+    .at-list__item--thumb .item-thumb {
+        width: 42px !important;
+        height: 42px !important;
+    }
+
+}
+
+//list 箭头大小
+.at-list__item .item-extra__icon-arrow {
+    font-size: 26px !important;
+}
+
+.at-list__item::after {
+    border: 0 solid #F5F6F7 !important;
+    border-bottom: 1.5PX solid #F5F6F7 !important;
+}
+
+.at-list::after {
+    border: 0 solid #F5F6F7 !important;
+    border-bottom: 1.5PX solid #F5F6F7 !important;
+}
+
+.mgt15 {
+    margin-top: 30px !important;
+}
+
+.mgb15 {
+    margin-bottom: 30px !important;
+
+}
+
+
+.moreTabs {
+    flex: 1;
+
+    .at-tabs__item-underline {
+        bottom: 13px !important;
+        margin-left: 42.5% !important;
+        width: 15% !important;
+        height: 7px !important;
+        background-color: #E02021 !important;
+    }
+
+    .at-tabs__item {
+        color: #a3aab7 !important;
+        font-weight: 400 !important;
+        font-size: 28px !important;
+    }
+
+    .at-tabs__item--active {
+        color: #000 !important;
+        font-weight: 500 !important;
+        font-size: 32px !important;
+    }
+}
+
+@import '~taro-ui/dist/style/index.scss';

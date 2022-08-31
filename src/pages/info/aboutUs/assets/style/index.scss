@@ -1,0 +1,55 @@
+.aboutUs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    .aboutUsLogo {
+        display: inline-block;
+        width: 420px;
+        height: 178px;
+    }
+    .aboutUsText {
+        margin-top: 10px;
+        width: 100%;
+        color: #202224;
+        text-indent: 2em;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 64px;
+    }
+    .phoneContent {
+        position: absolute;
+        bottom: 100px;
+        text-align: center;
+    }
+    .phoneNum {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        padding: 0 30px;
+        height: 60px;
+        border-radius: 4px;
+        background: #f5f6f7;
+        opacity: 1;
+        .phoneNumImg {
+            margin-right: 10px;
+            width: 28px;
+            height: 28px;
+        }
+        .phoneNumText {
+            display: inline-block;
+            color: #202224;
+            text-align: left;
+            font-weight: Normal;
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+    .phoneNumTextBtn {
+        margin-top: 20px;
+        color: #a3aab7;
+        font-weight: Normal;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}

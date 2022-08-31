@@ -1,0 +1,31 @@
+.numInput {
+    height: 56px;
+    border: 0px;
+
+    .at-input-number__btn {
+        background-color: #f5f6f7;
+        padding: 0 15px;
+        color: #202224;
+        border-radius: 4px;
+        .at-input-number__btn-subtract,
+        .at-input-number__btn-add {
+            font-size: 32px;
+        }
+    }
+    .at-input-number--disabled {
+        color: #ccc;
+    }
+    .at-input-number__input {
+        color: black;
+        opacity: 1;
+        border: 0px;
+        width: 50px;
+        .weui-input {
+            color: black;
+            opacity: 1;
+            border: 0px;
+            width: 50px;
+            height: 100%;
+        }
+    }
+}

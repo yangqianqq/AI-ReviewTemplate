@@ -1,0 +1,9 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "keChuangYun",
+  "appid": "touristappid",
+  "setting": {
+    "es6": false,
+    "minified": false
+  }
+}
